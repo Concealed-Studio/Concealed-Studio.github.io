@@ -1,0 +1,429 @@
+<!DOCTYPE html><!--  Last Published: Fri Jun 23 2023 14:24:11 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="630f7ce454842c397eddea42" data-wf-site="62d80f07d76688947089f616">
+<head>
+  <meta charset="utf-8">
+  <title>隐蔽机构-联系我们</title>
+  <meta content="隐蔽机构-联系我们" property="og:title">
+  <meta content="隐蔽机构-联系我们" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/concealedstudio.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Noto Sans SC:100,300,regular,500,700,900:chinese-simplified,latin"]
+        }
+      });
+    </script>
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+      .body {
+        /* These rules create an artificially confined space, so we get 
+     a scrollbar that we can hide. They are not directly involved in 
+     hiding the scrollbar. */
+        border: none;
+        padding: .5em;
+        white-space: pre-wrap;
+        height: 5em;
+        overflow-y: scroll;
+      }
+      .body {
+        /* This is the magic bit for Firefox */
+        scrollbar-width: none;
+      }
+      .body::-webkit-scrollbar {
+        /* This is the magic bit for WebKit */
+        display: none;
+      }
+    </style>
+  <style>
+      /*!
+ * fullPage 2.9.7
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+      html.fp-enabled,
+      .fp-enabled body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /*Avoid flicker on slides transitions for mobile phones #336 */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      .fp-section {
+        position: relative;
+        -webkit-box-sizing: border-box;
+        /* Safari<=5 Android<=3 */
+        -moz-box-sizing: border-box;
+        /* <=28 */
+        box-sizing: border-box;
+      }
+      .fp-slide {
+        float: left;
+      }
+      .fp-slide,
+      .fp-slidesContainer {
+        height: 100%;
+        display: block;
+      }
+      .fp-slides {
+        z-index: 1;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        -webkit-transition: all 0.3s ease-out;
+        /* Safari<=6 Android<=4.3 */
+        transition: all 0.3s ease-out;
+      }
+      .fp-section.fp-table,
+      .fp-slide.fp-table {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+      }
+      .fp-tableCell {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+      }
+      .fp-slidesContainer {
+        float: left;
+        position: relative;
+      }
+      .fp-controlArrow {
+        -webkit-user-select: none;
+        /* webkit (safari, chrome) browsers */
+        -moz-user-select: none;
+        /* mozilla browsers */
+        -khtml-user-select: none;
+        /* webkit (konqueror) browsers */
+        -ms-user-select: none;
+        /* IE10+ */
+        position: absolute;
+        z-index: 4;
+        top: 50%;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        margin-top: -38px;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      .fp-controlArrow.fp-prev {
+        left: 15px;
+        width: 0;
+        border-width: 38.5px 34px 38.5px 0;
+        border-color: transparent #fff transparent transparent;
+      }
+      .fp-controlArrow.fp-next {
+        right: 15px;
+        border-width: 38.5px 0 38.5px 34px;
+        border-color: transparent transparent transparent #fff;
+      }
+      .fp-scrollable {
+        overflow: hidden;
+        position: relative;
+      }
+      .fp-scroller {
+        overflow: hidden;
+      }
+      .iScrollIndicator {
+        border: 0 !important;
+      }
+      .fp-notransition {
+        -webkit-transition: none !important;
+        transition: none !important;
+      }
+      #fp-nav {
+        position: fixed;
+        z-index: 100;
+        margin-top: -32px;
+        top: 50%;
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+      }
+      #fp-nav.right {
+        right: 17px;
+      }
+      #fp-nav.left {
+        left: 17px;
+      }
+      .fp-slidesNav {
+        position: absolute;
+        z-index: 4;
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0 !important;
+        right: 0;
+        margin: 0 auto !important;
+      }
+      .fp-slidesNav.bottom {
+        bottom: 17px;
+      }
+      .fp-slidesNav.top {
+        top: 17px;
+      }
+      #fp-nav ul,
+      .fp-slidesNav ul {
+        margin: 0;
+        padding: 0;
+      }
+      #fp-nav ul li,
+      .fp-slidesNav ul li {
+        display: block;
+        width: 14px;
+        height: 13px;
+        margin: 7px;
+        position: relative;
+      }
+      .fp-slidesNav ul li {
+        display: inline-block;
+      }
+      #fp-nav ul li a,
+      .fp-slidesNav ul li a {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      #fp-nav ul li a.active span,
+      .fp-slidesNav ul li a.active span,
+      #fp-nav ul li:hover a.active span,
+      .fp-slidesNav ul li:hover a.active span {
+        height: 12px;
+        width: 12px;
+        margin: -6px 0 0 -6px;
+        border-radius: 100%;
+      }
+      #fp-nav ul li a span,
+      .fp-slidesNav ul li a span {
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        height: 4px;
+        width: 4px;
+        border: 0;
+        background: #333;
+        left: 50%;
+        top: 50%;
+        margin: -2px 0 0 -2px;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+      #fp-nav ul li:hover a span,
+      .fp-slidesNav ul li:hover a span {
+        width: 10px;
+        height: 10px;
+        margin: -5px 0px 0px -5px;
+      }
+      #fp-nav ul li .fp-tooltip {
+        position: absolute;
+        top: -2px;
+        color: #fff;
+        font-size: 14px;
+        font-family: arial, helvetica, sans-serif;
+        white-space: nowrap;
+        max-width: 220px;
+        overflow: hidden;
+        display: block;
+        opacity: 0;
+        width: 0;
+        cursor: pointer;
+      }
+      #fp-nav ul li:hover .fp-tooltip,
+      #fp-nav.fp-show-active a.active+.fp-tooltip {
+        -webkit-transition: opacity 0.2s ease-in;
+        transition: opacity 0.2s ease-in;
+        width: auto;
+        opacity: 1;
+      }
+      #fp-nav ul li .fp-tooltip.right {
+        right: 20px;
+      }
+      #fp-nav ul li .fp-tooltip.left {
+        left: 20px;
+      }
+      .fp-auto-height.fp-section,
+      .fp-auto-height .fp-slide,
+      .fp-auto-height .fp-tableCell {
+        height: auto !important;
+      }
+      .fp-responsive .fp-auto-height-responsive.fp-section,
+      .fp-responsive .fp-auto-height-responsive .fp-slide,
+      .fp-responsive .fp-auto-height-responsive .fp-tableCell {
+        height: auto !important;
+      }
+    </style>
+</head>
+<body>
+  <div id="fullpage" class="fp-wrapper-contact">
+    <div class="section wf-section">
+      <div class="background-wrapper color1"></div>
+    </div>
+    <div class="section wf-section">
+      <div class="background-wrapper color2"></div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" class="home w-inline-block"></a><img src="images/Logo-文字_1.svg" loading="lazy" width="Auto" height="150" alt="Logo" class="logo-text"><img src="images/Logo-图形.svg" loading="lazy" alt="Logo" class="logo-image"><img src="images/Logo-图形-方.svg" loading="lazy" width="31" alt="Logo" class="logo-square"><img src="images/Logo-图形-方.svg" loading="lazy" width="50" alt="Logo" class="logo-square-copy">
+      </div>
+      <div class="navbar-heading-box">
+        <h1 class="navbar-heading-text">联系我们</h1>
+      </div>
+      <div data-w-id="6dd36148-4952-f3db-faaf-06290d0eb6de" class="menu-button">
+        <div data-is-ix2-target="1" class="lottie-animation" data-w-id="6dd36148-4952-f3db-faaf-06290d0eb6df" data-animation-type="lottie" data-src="documents/hamburger.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.2" data-duration="0"></div>
+      </div>
+      <div class="nav-menu"></div>
+      <div class="link-block">
+        <div class="nav-link-1">
+          <a href="about-us.html" class="about-us">关于我们</a>
+        </div>
+        <div class="nav-link-2">
+          <a href="work.html" class="work">作品</a>
+        </div>
+        <div class="nav-link-3">
+          <a href="contact.html" aria-current="page" class="contact w--current">联系</a>
+        </div>
+        <div class="language">
+          <a href="en/contact.html" class="en">EN</a>
+          <a href="#" class="cn">中</a>
+          <a href="studio/home.html" class="studio-in-link w-inline-block"><img src="images/工作室入口.svg" loading="lazy" height="40" alt="" class="studio-in"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-page-box">
+    <div data-w-id="b2b8df26-3996-154b-e216-9bde8d24b51a" class="form-block w-form">
+      <form id="email-form" name="email-form" data-name="Email Form" method="get" class="contact-form w-clearfix" data-wf-page-id="630f7ce454842c397eddea42" data-wf-element-id="b2b8df26-3996-154b-e216-9bde8d24b51b">
+        <div class="text-contact-heading">快速联系</div><label for="name" class="field-label">称呼</label><input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="您的称呼..." id="name" required=""><label for="email" class="field-label">联系方式</label><input type="text" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="邮箱或其他联系方式..." id="email" required=""><label for="field" class="field-label">消息</label><textarea placeholder="在此输入信息..." maxlength="5000" id="field" name="field" data-name="field" class="textarea w-input"></textarea><input type="submit" value="发送" data-wait="请等待..." class="contact-sent w-button">
+      </form>
+      <div class="success-message w-form-done">
+        <div class="text-block-6">您的消息已发送，我们将尽快取得联系！</div>
+      </div>
+      <div class="error-message-contact w-form-fail">
+        <div class="text-block-7">哦不，发送时出现了一些错误！</div>
+      </div>
+    </div>
+    <div data-w-id="895cd885-3874-a6d9-889c-bc537408109b" class="contact-box">
+      <div class="contace-mail-box w-clearfix"><img src="images/联系-邮件.svg" loading="lazy" height="55" alt="" class="contact-image">
+        <div class="text-block-contact">
+          <a href="mailto:ConcealedStudio@foxmail.com" class="link-contact">ConcealedStudio@foxmail.com</a>
+        </div>
+      </div>
+      <div class="contace-twitter-box w-clearfix"><img src="images/联系-电话.svg" loading="lazy" height="55" alt="" class="contact-image">
+        <div class="text-block-contact">
+          <a href="tel:+8615000000000" class="link-contact">+86 15000000000</a>
+        </div>
+      </div>
+      <div class="contace-phone-box w-clearfix"><img src="images/联系-推特.svg" loading="lazy" height="55" alt="" class="contact-image">
+        <div class="text-block-contact">
+          <a href="https://twitter.com/ConcealedStudio" target="_blank" class="link-contact">@ConcealedStudio</a>
+        </div>
+      </div>
+      <div class="down-arrow-box"><img src="images/下箭头.svg" loading="lazy" width="45" alt="" class="down-arrow">
+        <a href="javascript:fullpage_api.moveSectionDown()" class="page-down-link w-inline-block"></a>
+      </div>
+    </div>
+  </div>
+  <div class="contact-page-box-mobie">
+    <div class="contact-box-mobie">
+      <div class="contace-mail-box-copy w-clearfix"><img src="images/联系-邮件.svg" loading="lazy" height="45" alt="" class="contact-image">
+        <div class="text-block-contact">
+          <a href="mailto:ConcealedStudio@foxmail.com" class="link-contact">ConcealedStudio@foxmail.com</a>
+        </div>
+      </div>
+      <div class="contace-twitter-box w-clearfix"><img src="images/联系-电话.svg" loading="lazy" height="45" alt="" class="contact-image">
+        <div class="text-block-contact">
+          <a href="tel:+8615000000000" class="link-contact">+86 15000000000</a>
+        </div>
+      </div>
+      <div class="contace-phone-box w-clearfix"><img src="images/联系-推特.svg" loading="lazy" height="45" alt="" class="contact-image">
+        <div class="text-block-contact">
+          <a href="https://twitter.com/ConcealedStudio" target="_blank" class="link-contact">@ConcealedStudio</a>
+        </div>
+      </div>
+      <div class="down-arrow-box-contact"><img src="images/下箭头.svg" loading="lazy" width="45" alt="" class="down-arrow"></div>
+    </div>
+    <div class="form-block-mobie w-form">
+      <form id="email-form" name="email-form" data-name="Email Form" method="get" class="contact-form-mobie w-clearfix" data-wf-page-id="630f7ce454842c397eddea42" data-wf-element-id="edfed476-4c59-4730-322d-3e902c864833">
+        <div class="text-contact-heading">快速联系</div><label for="name-2" class="field-label">称呼</label><input type="text" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="您的称呼..." id="name-2" required=""><label for="email-2" class="field-label">联系方式</label><input type="text" class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="邮箱或其他联系方式..." id="email-2" required=""><label for="field-2" class="field-label">消息</label><textarea placeholder="在此输入信息..." maxlength="5000" id="field-2" name="field-2" data-name="Field 2" class="textarea w-input"></textarea><input type="submit" value="发送" data-wait="请等待..." class="contact-sent w-button">
+      </form>
+      <div class="success-message-mobie w-form-done">
+        <div class="text-block-6">您的消息已发送，我们将尽快取得联系！</div>
+      </div>
+      <div class="error-message-contact-mobie w-form-fail">
+        <div class="text-block-7">哦不，发送时出现了一些错误！</div>
+      </div>
+    </div>
+  </div>
+  <a href="javascript:fullpage_api.moveSectionUp()" class="page-up-link w-inline-block"></a>
+  <div class="scroll-bar contact"><img src="images/辅助图形-bot.svg" loading="lazy" alt="" class="big-logo-work"><img src="images/辅助图形-mid.svg" loading="lazy" data-w-id="8a47a63e-8adc-49b0-d3bb-6f272d92fedc" alt="" class="big-logo-work"><img src="images/辅助图形-top.svg" loading="lazy" alt="" class="big-logo-work"></div>
+  <div class="navbar-mobie">
+    <div class="nav-menu-mobie"></div>
+    <div class="link-block-mobie">
+      <div class="nav-link-1">
+        <a href="about-us.html" class="about-us">关于我们</a>
+      </div>
+      <div class="nav-link-2">
+        <a href="work.html" class="work">作品</a>
+      </div>
+      <div class="nav-link-3">
+        <a href="contact.html" aria-current="page" class="contact w--current">联系</a>
+      </div>
+      <div class="language-mobie">
+        <a href="en/contact.html" class="en-copy">EN</a>
+        <a href="#" class="cn-copy">中</a>
+        <a href="studio/home.html" class="studio-in-link w-inline-block"><img src="images/工作室入口.svg" loading="lazy" height="40" alt="" class="studio-in"></a>
+      </div>
+    </div>
+    <div class="brand-mobie">
+      <a href="index.html" class="home w-inline-block"></a><img src="images/Logo-文字_1.svg" loading="lazy" width="150" height="150" alt="Logo" class="logo-text"><img src="images/Logo-图形.svg" loading="lazy" alt="Logo" class="logo-image">
+    </div>
+    <div data-w-id="799cf19f-ae4a-38ac-bb45-a55e2585ec48" class="menu-button-mobie">
+      <div data-is-ix2-target="1" class="lottie-animation" data-w-id="799cf19f-ae4a-38ac-bb45-a55e2585ec49" data-animation-type="lottie" data-src="documents/hamburger.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1.2" data-duration="0"></div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62d80f07d76688947089f616" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script>
+      if (screen && screen.width > 480) {
+        document.write('<script type="text/javascript" src="https://unpkg.com/fullpage.js@3.1.2/dist/fullpage.min.js"><\/script>');
+      }
+    </script>
+  <script>
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          licenseKey: 'YOUR_KEY_HERE',
+          scrollingSpeed: 900,
+          scrollBar: true,
+        });
+      });
+    </script>
+</body>
+</html>
