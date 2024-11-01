@@ -413,6 +413,7 @@
 }
 
 .text-box-footer {
+  margin-left: -15%;
   width: 45%;
   height: 50%;
   max-height: none;
